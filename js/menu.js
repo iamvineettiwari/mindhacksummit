@@ -3,9 +3,8 @@
 const handleMobileOverviewSection = () => {
     let doc = document.getElementById('overview');
     const { y } = doc.getBoundingClientRect();
-    console.log(y)
     let li = document.getElementById('overview-m-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 50 && y >= - (doc.offsetHeight - 50)) {
         li.classList.add('active-m-menu');
     } else {
         li.classList.remove('active-m-menu');
@@ -15,9 +14,8 @@ const handleMobileOverviewSection = () => {
 const handleMobileScheduleSection = () => {
     let doc = document.getElementById('schedule');
     const { y } = doc.getBoundingClientRect();
-    console.log(y)
     let li = document.getElementById('schedule-m-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 50 && y >= - (doc.offsetHeight - 50)) {
         li.classList.add('active-m-menu');
     } else {
         li.classList.remove('active-m-menu');
@@ -27,9 +25,8 @@ const handleMobileScheduleSection = () => {
 const handleMobileSpeakersSection = () => {
     let doc = document.getElementById('speakers');
     const { y } = doc.getBoundingClientRect();
-    console.log(y)
     let li = document.getElementById('speakers-m-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 50 && y >= - (doc.offsetHeight - 50)) {
         li.classList.add('active-m-menu');
     } else {
         li.classList.remove('active-m-menu');
@@ -39,9 +36,8 @@ const handleMobileSpeakersSection = () => {
 const handleMobileTicketsSection = () => {
     let doc = document.getElementById('tickets');
     const { y } = doc.getBoundingClientRect();
-    console.log(y)
     let li = document.getElementById('tickets-m-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 50 && y >= - (doc.offsetHeight - 50)) {
         li.classList.add('active-m-menu');
     } else {
         li.classList.remove('active-m-menu');
@@ -51,9 +47,8 @@ const handleMobileTicketsSection = () => {
 const handleMobileVenuSection = () => {
     let doc = document.getElementById('venu');
     const { y } = doc.getBoundingClientRect();
-    console.log(y)
     let li = document.getElementById('venu-m-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 50 && y >= - (doc.offsetHeight - 50)) {
         li.classList.add('active-m-menu');
     } else {
         li.classList.remove('active-m-menu');
@@ -63,9 +58,8 @@ const handleMobileVenuSection = () => {
 const handleMobileTeamSection = () => {
     let doc = document.getElementById('team');
     const { y } = doc.getBoundingClientRect();
-    console.log(y)
     let li = document.getElementById('team-m-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 50 && y >= - (doc.offsetHeight - 50)) {
         li.classList.add('active-m-menu');
     } else {
         li.classList.remove('active-m-menu');
@@ -109,7 +103,7 @@ const handleDesktopOverviewSection = () => {
     let doc = document.getElementById('overview');
     const { y } = doc.getBoundingClientRect();
     let li = document.getElementById('overview-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 138 && y >= - (doc.offsetHeight - 138)) {
         li.classList.add('active');
     } else {
         li.classList.remove('active');
@@ -120,7 +114,7 @@ const handleDesktopScheduleSection = () => {
     let doc = document.getElementById('schedule');
     const { y } = doc.getBoundingClientRect();
     let li = document.getElementById('schedule-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 138 && y >= - (doc.offsetHeight - 138)) {
         li.classList.add('active');
     } else {
         li.classList.remove('active');
@@ -131,7 +125,7 @@ const handleDesktopSpeakersSection = () => {
     let doc = document.getElementById('speakers');
     const { y } = doc.getBoundingClientRect();
     let li = document.getElementById('speakers-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 138 && y >= - (doc.offsetHeight - 138)) {
         li.classList.add('active');
     } else {
         li.classList.remove('active');
@@ -142,7 +136,7 @@ const handleDesktopTicketsSection = () => {
     let doc = document.getElementById('tickets');
     const { y } = doc.getBoundingClientRect();
     let li = document.getElementById('tickets-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 138 && y >= - (doc.offsetHeight - 138)) {
         li.classList.add('active');
     } else {
         li.classList.remove('active');
@@ -153,7 +147,7 @@ const handleDesktopVenuSection = () => {
     let doc = document.getElementById('venu');
     const { y } = doc.getBoundingClientRect();
     let li = document.getElementById('venu-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 138 && y >= - (doc.offsetHeight - 138)) {
         li.classList.add('active');
     } else {
         li.classList.remove('active');
@@ -164,7 +158,7 @@ const handleDesktopTeamSection = () => {
     let doc = document.getElementById('team');
     const { y } = doc.getBoundingClientRect();
     let li = document.getElementById('team-nav');
-    if (y <= 100 && y >= - (doc.offsetHeight - 100)) {
+    if (y <= 138 && y >= - (doc.offsetHeight - 138)) {
         li.classList.add('active');
     } else {
         li.classList.remove('active');
@@ -186,6 +180,25 @@ const initDesktop = () => {
     document.addEventListener('scroll', handleDesktopTicketsSection);
     document.addEventListener('scroll', handleDesktopVenuSection);
     document.addEventListener('scroll', handleDesktopTeamSection);
+    (function ($) {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                || location.hostname == this.hostname) {
+
+                let target = $(this.hash);
+                let headerHeight = $("#desktop-nav").height() + 5;
+
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - headerHeight
+                    }, 100);
+                    return false;
+                }
+            }
+        });
+    })(jQuery);
 }
 
 const navSwitcher = (x) => {

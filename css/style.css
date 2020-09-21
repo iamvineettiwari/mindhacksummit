@@ -5,6 +5,9 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #0E1125;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -28,6 +31,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+a.header-top-btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #2D94AB;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .header-top-section .header-top-btn {
@@ -82,8 +93,6 @@ header {
 
 section {
     min-height: 100vh;
-    padding-top: 160px;
-    padding-bottom: 160px;
 }
 
 nav {
@@ -384,10 +393,10 @@ nav ul li a:hover {
 
 .timer-section .timer-content-section p.time-count {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 6.5vw;
+    font-size: 4.5vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 6.5vw;
+    line-height: 4.5vw;
     letter-spacing: 0em;
     text-align: center;
     color: #F8F8F8;
@@ -406,10 +415,10 @@ nav ul li a:hover {
 
 .timer-section .timer-content-section p.time-colon {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 6.5vw;
+    font-size: 4.5vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 5.5vw;
+    line-height: 3.8vw;
     letter-spacing: 0em;
     text-align: center;
     color: #F8F8F8;
@@ -418,13 +427,16 @@ nav ul li a:hover {
 /* Schedule Section */
 #schedule {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #schedule::before {
     content: '';
-    display: inline;
+    display: inline-block;
     position: absolute;
-    top:170px;
+    top:20px;
     left: 5%;
     background: url('../images/TimeLineGear.png');
     background-repeat: no-repeat;
@@ -443,13 +455,13 @@ nav ul li a:hover {
 @media screen and (max-width: 767px) {
     #schedule::before {
         content: '';
-        display: inline;
+        display: inline-block;
         position: absolute;
         top: 10px;
         left: 8%;
         background: url('../images/TimeLineGear.png');
         background-repeat: no-repeat;
-        width: 92%;
+        width: 90%;
         height: 50%;
     }
 
@@ -616,6 +628,7 @@ nav ul li a:hover {
     font-size: 50px;
     text-align: center;
     letter-spacing: 3px;
+    padding-top: 5rem;
 }
 
 .speaker {
@@ -632,7 +645,7 @@ nav ul li a:hover {
 }
 
 .speaker-image-cards {
-    margin-top: 7em;
+    margin-top: 5em;
 }
 
 .speaker-name {
@@ -682,11 +695,6 @@ nav ul li a:hover {
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
-    
-    section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
 
     #desktop-nav {
         display: none;
@@ -857,6 +865,7 @@ nav ul li a:hover {
         letter-spacing: 0em;
         text-align: left;
         color: #F8F8F8;
+        margin-left: 15px;
     }
 
     /* TIMER SECTION */
@@ -897,7 +906,7 @@ nav ul li a:hover {
 
     .timer-section .timer-content-section p.time-count {
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 6.5vw;
+        font-size: 8.5vw;
         font-style: normal;
         font-weight: 600;
         line-height: 6.5vw;
@@ -1002,8 +1011,9 @@ nav ul li a:hover {
 
 .divider {
     margin-top: 5em;
-    border: 2px solid #C600E6;
+    border: 1px solid #C600E6;
     width: 60%;
+    background: #C600E6;
 }
 .onboard-details {
     margin-top: 3em;
@@ -1081,7 +1091,7 @@ nav ul li a:hover {
     padding-top: 3em;
 }
 .sponsor-button {
-    padding-top: 7em;
+    padding-top: 4em;
 }
 .register-sponsor {
     background-color: #2D94AB;
@@ -1144,11 +1154,6 @@ nav ul li a:hover {
     }
 }
 
-#tickets {
-    padding-top: 180px !important;
-    padding-bottom: 100px !important;
-}
-
 .configurations {
     display: flex;
     min-height: 250px;
@@ -1172,7 +1177,7 @@ nav ul li a:hover {
 
 .configurations p {
     font-family: 'Source Sans Pro';
-    font-size: 30px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 600;
     line-height: 50px;
