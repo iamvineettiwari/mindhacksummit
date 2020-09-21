@@ -30,9 +30,8 @@ body {
     color: white;
     font-family: Source Sans Pro;
     font-size: 30px;
-    text-align: right;
+    text-align: center;
     padding-top: 1.5em;
-    padding-right: 2em;
 }
 @media (max-width: 600px) {
     .quote-text {
@@ -701,7 +700,7 @@ nav ul li a:hover {
 .register-speaker {
     background-color: #2D94AB;
     border-radius: 70px;
-    color: rgba(16,16,16,1);
+    color: white;
     font-size: 20px;
     padding: 0 30px 0 30px;
     height: 60px;
@@ -712,7 +711,7 @@ nav ul li a:hover {
 
 .register-speaker:hover {
     background-color: #2d94ab;
-    color: rgba(16,16,16,1);
+    color: white;
 }
 
 .speaker-button {
@@ -1004,7 +1003,7 @@ nav ul li a:hover {
 .register-ticket {
     background-color: #2D94AB;
     border-radius: 70px;
-    color: rgba(16,16,16,1);
+    color: white;
     font-size: 20px;
     padding: 0 30px 0 30px;
     height: 60px;
@@ -1014,7 +1013,7 @@ nav ul li a:hover {
 }
 .register-ticket:hover {
     background-color: #2d94ab;
-    color: rgba(16,16,16,1);
+    color: white;
 }
 
 .event-details {
@@ -1137,7 +1136,7 @@ nav ul li a:hover {
 .register-sponsor {
     background-color: #2D94AB;
     border-radius: 70px;
-    color: rgba(16,16,16,1);
+    color: white;
     font-size: 20px;
     padding: 0 30px 0 30px;
     height: 60px;
@@ -1147,8 +1146,12 @@ nav ul li a:hover {
 }
 .register-sponsor:hover {
     background-color: #2d94ab;
-    color: rgba(16,16,16,1);
+    color: white;
 
+}
+a.header-top-btn {
+    color: white;
+    font-weight: 600;
 }
 .social-media-icons {
     display: flex;
