@@ -577,7 +577,12 @@ nav ul li a:hover {
         margin-bottom: 20px !important;
     }
 }
-
+.day-5 {
+    padding-left: 4.5em;
+}
+.day-2 {
+    padding-left: 1em;
+}
 .ps-timeline-sec .container ol.ps-timeline {
     margin: 390px 0;
     padding: 0;
@@ -586,7 +591,7 @@ nav ul li a:hover {
 }
 .ps-timeline-sec .container ol.ps-timeline li {
     float: left;
-    width: 25%;
+    width: 20%;
     padding-top: 30px;
     position: relative;
 }
@@ -610,7 +615,7 @@ nav ul li a:hover {
 
 .ps-timeline-sec .container ol.ps-timeline li p.ps-timeline-head {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 10px;
@@ -1096,7 +1101,7 @@ nav ul li a:hover {
 }
 
 .conf-theme {
-    background: linear-gradient(90deg, #702841 0%, #270627 100%);
+    background: linear-gradient(89.84deg, #742F56 0.14%, #381C40 49.71%, #0E1125 99.87%);
     font-family: Source Sans Pro;
     height:20%;
 
@@ -1188,12 +1193,18 @@ nav ul li a:hover {
     .air {
         padding-top: 3em;
     }
+    .day-5 {
+        padding-left: 0;
+    }
+    .day-2 {
+        padding-left: 0;
+    }
 }
 
 .configurations {
     display: flex;
     min-height: 250px;
-    background: linear-gradient(90deg, #702841 0%, #270627 100%);
+    background: linear-gradient(89.84deg, #742F56 0.14%, #381C40 49.71%, #0E1125 99.87%);
     align-items: center;
     position: relative;
 }
@@ -1249,3 +1260,4 @@ nav ul li a:hover {
     }
     
 }
+
