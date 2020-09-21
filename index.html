@@ -282,7 +282,7 @@
                 </li>
             </ol>
         </div>
-    </section>   
+    </section>
 
     <div id="tickets" class="container-fluid ticket-section">
         <div class="container text-center ticket-section-content pt-3">
@@ -290,7 +290,7 @@
             <p class="ticket-content">The summit is completely virtual and free for everyone around the globe.<br> Go on
                 and grab your free ticket now!</p>
         </div>
-        <div class="container ticket-button text-center pb-5">            
+        <div class="container ticket-button text-center pb-5">
             <a href="javascript:void()" class="btn header-top-btn">Tickets out soon</a>
         </div>
     </div>
@@ -388,6 +388,15 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./serviceworker.js')
+                    .then((reg) => console.log('Success: ', reg.scope))
+                    .catch((err) => console.log('Failure: ', err));
+            })
+        }
+    </script>
 </body>
 
 </html>

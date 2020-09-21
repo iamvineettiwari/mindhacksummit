@@ -51,11 +51,3 @@ setTimer();
 setInterval(() => {
     setTimer();
 }, 1000);
-
-if('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./serviceworker.js')
-            .then((reg) => console.log('Success: ', reg.scope))
-            .catch((err) => console.log('Failure: ', err));
-    })
-}
