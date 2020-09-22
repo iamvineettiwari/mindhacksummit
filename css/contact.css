@@ -1,0 +1,112 @@
+.contact-details {
+    font-family: Source Sans Pro;
+    background-color: #0e1125;
+}
+.heading {
+    padding-top: 4em;
+}
+.title {
+    color: rgba(248,248,248,1);
+    font-size: 70px;
+}
+.jingle-line {
+    color: rgba(248,248,248,1);
+    font-size: 36px;
+    padding-top: 2em;
+}
+.illustration {
+    margin-top: 10em;
+    margin-right: 7em;
+}
+.illustration-image {
+    width: 40%;
+}
+.twitter-illustration,.linkedin-illustration,.instagram-illustration {
+    width: 6%;
+}
+.twitter-illustration {
+    position: relative;
+    top: -180px;
+    left: -170px;
+}
+.linkedin-illustration {
+    position: relative;
+    top: -110px;
+    left: -120px;
+}
+.instagram-illustration {
+    position: relative;
+    left: -180px;
+    top: 20px;
+}
+.contact-details-container {
+    padding-top: 4em;
+}
+.email {
+    color: white;
+    font-size: 36px;
+}
+.email-link a {
+    color: #c600e6;
+}
+.phone-number {
+    color: white;
+    font-size: 36px;
+    padding-top: 2em;
+}
+.phone-number-link a {
+    color: #c600e6;
+}
+.spread-mssg {
+    font-size: 36px;
+    color: white;
+    padding-top: 2em;
+}
+.social-media {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    padding-bottom: 4em;
+}
+@media (max-width: 600px) {
+    .illustration-image {
+        width: 80%;
+        padding-left: 2em;
+    }
+    .jingle-line {
+        text-align: center;
+        font-size: 30px;
+    }
+    .illustration {
+        margin-right: 0;
+    }
+    .twitter-illustration,.linkedin-illustration,.instagram-illustration {
+        width: 12%;
+    }
+    .twitter-illustration {
+        position: relative;
+        top: -120px;
+        left: -120px;
+    }
+    .linkedin-illustration {
+        position: relative;
+        left: 140px;
+        top: -220px;
+    }
+    .instagram-illustration {
+        position: relative;
+        left: 100px;
+        top: -137px;
+    }
+    .email,.phone-number {
+        font-size: 30px;
+    }
+    .spread-mssg {
+        font-size: 30px;
+    }
+    .social-media {
+        width: 80%;
+    }
+}

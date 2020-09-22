@@ -1263,4 +1263,20 @@ a.header-top-btn {
     }
     
 }
+.contact-us-section {
+    font-family: Source Sans Pro;
+}
+.contact-us-link {
+    color: white;
+    padding-bottom: 2em;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+}
+.contact-link a {
+    color: #c600e6;
+    text-decoration: underline;
+}
+.contact-link a:focus {
+    outline: none;
+}
 
