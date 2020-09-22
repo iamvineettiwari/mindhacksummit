@@ -108,7 +108,7 @@ a.header-top-btn {
     padding-left: 30px;
 }
 
-.header-mid-section .header-mid-right p {
+.header-mid-section .header-mid-right > p, h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
     font-style: normal;
