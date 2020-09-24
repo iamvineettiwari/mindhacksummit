@@ -67,13 +67,15 @@
 .teams-images {
     margin-top: 3em;
 }
-.image-second-row {
-    margin-top: 3em;
-}
+
 .member-name {
     color: white;
     font-size: 20px;
     margin-top: 1em;
+}
+.club {
+    color: white;
+    font-size: 20px;
 }
 .divider {
     margin-top: 5em;
@@ -108,5 +110,8 @@
     }
     .social-media-icons {
         width: 80%;
+    }
+    .image-second-row {
+        margin-top: 0;
     }
 }
